@@ -16,7 +16,7 @@
     <meta name="apple-mobile-web-app-title" content="Twibbon Generator">
     <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
     <meta name="msapplication-TileColor" content="#FFFFFF">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="/favicon.ico">
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/custom.css">
@@ -54,7 +54,7 @@
             window.location.protocol = 'https:';
         }*/
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js')
+            navigator.serviceWorker.register('/service-worker.js')
         }
 </script>
 </body>
