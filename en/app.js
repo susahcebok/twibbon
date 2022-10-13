@@ -49,7 +49,7 @@ let init = () => {
 }
 
 let setTwibbon = () => {
-    target2.src = 'images/twibbon.png';
+    target2.src = '/images/twibbon.png';
 }
 
 let imageReaderOnLoad = () => {
@@ -65,7 +65,7 @@ let enableBtnDownload = () => {
 let generate = () => {
     
     if(image.files[0] === undefined) 
-        alerty.alert('<i class="fa fa-warning" style="color:red;"></i> Gambar tidak boleh kosong!');
+        alerty.alert('<i class="fa fa-warning" style="color:red;"></i> Image cannot be empty!');
         
     else{
         destroyInterval();                               
