@@ -13,17 +13,23 @@
 <!-- SmolCSS - Smol Document Styles
 Generated from: https://SmolCSS.dev/#smol-document-styles -->
 <header>
-  <h1>Minimal Modern CSS Document Styles</h1>
+  <h1>TWIBBON.TK</h1>
 </header>
 <main>
   <article>
     <h2>Twibbon Generator</h2>
     <p>Ini adalah situs web tempat Anda dapat menambahkan foto ke bingkai.</p>
     <p>Silahkan unggah gambar dan klik pratinjau lalu unduh, aplikasi ini akan otomatis menggabungkan unggahan gambar yang Anda pilih.</p>
-    <h3>No classes, all selectors and combinators</h3>
-    <p><strong>Little rusty on your selectors and combinators</strong>? Check out my two-part guide to advanced CSS selectors, <a href="https://moderncss.dev/guide-to-advanced-css-selectors-part-one/">starting with part one</a>.</p>
-    <p>Sugar plum pie sweet roll chocolate bar chocolate cake jujubes jelly beans lollipop. Caramels muffin toffee bonbon icing wafer toffee tiramisu lemon drops.</p>
-    <p>Macaroon cheesecake cupcake cotton candy jujubes cupcake. Chocolate sweet sugar plum candy dessert sesame snaps pie. Cupcake pudding oat cake. Halvah candy canes gingerbread tiramisu chupa chups lollipop. Toffee toffee cake. Jelly beans jelly beans chupa chups liquorice dessert donut caramels.</p>
+    <p><label class="uploadBtnWrap" for="thefile">
+    <input type="file" id="thefile" onchange="alertFilename()" multiple/>
+    <span class="btn">Unggah Gambar...</span>
+    <span id="fileName">Tidak ada file yang dipilih</span>
+    </label></p>
+
+    <p><button class="press press-black press-round press-ghost" onclick="generate()">Pratinjau</button>
+    <button class="press press-indigo press-round press-ghost" onclick="download('')" id="download" disabled>Unduh</button></p>
+
+    <p><canvas id="canvas"></canvas></p>
   </article>
 </main>
 <footer>
