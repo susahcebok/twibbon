@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Example Domain</title>
+    <title>Twibbon Generator</title>
 
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -10,8 +10,6 @@
 </head>
 
 <body>
-<!-- SmolCSS - Smol Document Styles
-Generated from: https://SmolCSS.dev/#smol-document-styles -->
 <header>
   <h1>TWIBBON.TK</h1>
 </header>
@@ -35,6 +33,14 @@ Generated from: https://SmolCSS.dev/#smol-document-styles -->
 <footer>
   <p>© 2021 Stephanie Eckles, author of <a href="https://smolcss.dev">SmolCSS.dev</a></p>
 </footer>
-
+<script src="js/app.js"></script>
+<script>
+        /*if (window.location.protocol === 'http:') {
+            window.location.protocol = 'https:';
+        }*/
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+        }
+</script>
 </body>
 </html>
