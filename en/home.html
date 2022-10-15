@@ -31,16 +31,17 @@
 <main>
   <article>
     <h2>Twibbon Generator</h2>
-    <p>Ini adalah situs web tempat Anda dapat menambahkan foto ke bingkai.</p>
-    <p>Silahkan unggah gambar dan klik pratinjau lalu unduh, aplikasi ini akan otomatis menggabungkan unggahan gambar yang Anda pilih.</p>
+    <p>This is a website where you can add photos to frames.</p>
+    <p>Please upload an image and click preview then download, this application will automatically merge the uploaded images you choose.</p>
+
     <p><label class="uploadBtnWrap" for="thefile">
     <input type="file" id="thefile" onchange="alertFilename()" multiple/>
-    <span class="btn">Unggah Gambar...</span>
-    <span id="fileName">Tidak ada file yang dipilih</span>
+    <span class="btn">Upload Image...</span>
+    <span id="fileName">No files selected</span>
     </label></p>
 
-    <p><button class="press press-black press-round press-ghost" onclick="generate()">Pratinjau</button>
-    <button class="press press-indigo press-round press-ghost" onclick="download('')" id="download" disabled>Unduh</button>
+    <p><button class="press press-black press-round press-ghost" onclick="generate()">Preview</button>
+    <button class="press press-indigo press-round press-ghost" onclick="download('')" id="download" disabled>Download</button>
     </p>
 
     <br><canvas id="canvas"></canvas>
