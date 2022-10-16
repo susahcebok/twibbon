@@ -19,73 +19,19 @@
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <link rel="icon" href="favicon.ico">
     <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.6.2/tachyons.min.css">
-    <!--<link rel="stylesheet" href="css/custom.css">-->
+    <!--<link rel="stylesheet" href="#">-->
+    <!--<link rel="stylesheet" href="css/main.css">-->
     <script src="js/alert.js"></script>
     <script src="https://kit.fontawesome.com/2a19ad17e3.js"></script>
 </head>
 
 <body>
-<main class="pa4 dark-gray mw7 center sans-serif min-vh-100 flex flex-column flex-row-ns items-center">
-  <form class="measure-wide mr4-ns mb4 mb0-ns f5">
-    <fieldset class="ba b--transparent pa0 mh0">
-     
-      <legend class="f5 b ph0 mh0 ttu tracked bb bw2 pv2 db w-100">
-        Polygon Generator
-      </legend>
-      
-      <div class="mt5 mb4">
-        <label class="f5 ttu tracked db b mb2" for="js-side-count">
-          Number of Sides
-        </label>
-        <input class="b pa2 input-reset ba bw2 bg-white b--dark-gray w-100" 
-               type="number" id="js-side-count" value="8">
-      </div>
-      
-      <div class="mv4">
-        <label class="f5 ttu tracked db b mb2" for="js-radius">
-          Radius
-        </label>
-        <input class="b pa2 input-reset ba bw2 bg-white b--dark-gray w-100"
-               type="number" id="js-radius" value="200">
-      </div>      
-      
-      <fieldset class="ba b--transparent pa0 mh0 mt4 mb5">
-        <legend class="f5 ttu tracked db b mb2">Center</legend>
-        
-        <label class="f5 ttu tracked db b mb2 clip" for="js-cx">
-          Center X Coordinate
-        </label>
-        <label class="f5 ttu tracked db b mb2 clip" for="js-cy">
-          Center Y Coordinate
-        </label>
-        <div class="flex">
-          <input class="b pa2 input-reset ba bw2 bg-white b--dark-gray w-100 mr3"
-               type="number" id="js-cx" value="396">        
-          <input class="b pa2 input-reset ba bw2 bg-white b--dark-gray w-100"
-               type="number" id="js-cy" value="418">
-        </div>
-      </fieldset>
-    </fieldset>
-    
-    <div>
-      <input class="b pa3 input-reset ba b--dark-gray bw2 bg-white grow pointer f6 dib ttu tracked"
-             id="js-generate" type="button" value="Generate">
-    </div>
-  </form>
-  
-  <div class="flex-auto flex items-center justify-center w-100">
-    <div class="w-100">
-      <svg class="w-100 white debug-grid mb4 db" viewBox="0 0 800 800" 
-           stroke="#111" fill="none" stroke-width="4"
-           id="js-svg">
-        <polygon id="js-polygon" points="" />
-      </svg>
+<!-- SmolCSS - Smol Responsive Padding
+Generated from: https://SmolCSS.dev/#smol-responsive-padding -->
+<div data-container-style class="responsive-width responsive-padding">
+  <p class="responsive-font-size" data-text data-unstyled>Gummi bears gummies cheesecake donut liquorice sweet roll lollipop chocolate cake macaroon. Dragée powder biscuit. Dessert topping jelly beans liquorice cake sesame snaps oat cake chocolate bar marshmallow. Cookie danish jelly-o pudding tart chocolate. Jelly sweet tiramisu fruitcake dessert muffin chocolate cake dragée. Donut dragée carrot cake icing. Macaroon lemon drops muffin.</p>
+</div>
 
-      <pre id="js-result" class="code pa3 bg-near-white mb0 overflow-scroll"></pre>
-    </div>
-  </div>
-</main>
 
 <script src="js/app.js"></script>
 <script>
