@@ -1,78 +1,18 @@
-@charset "UTF-8";
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p {
-  margin: 0;
-}
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.65;
-  padding: 2rem;
-  background-color: #f5f2f7;
-  color: #29344B;
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-}
-
-/***
- 🟣 SmolCSS Snippet Styles
- */
-.responsive-width {
-  width: min(100%, 40rem);
-  margin-inline: auto;
-}
-
-.responsive-padding {
-  padding: 1.5rem max(5vw, 1rem);
-}
-
-.responsive-font-size {
-  font-size: clamp(0.875rem, 5vw, 2rem);
-  line-height: 1.2;
-}
-
-/* Additional demo styles from SmolCSS.dev
-   Not all styles may be needed for this pen */
-body > ul {
-  list-style: none;
-  margin: 0;
-}
-body > ul:not([data-padding-unset]) {
-  padding: 0;
-}
-
-[class*=smol]:not([data-component]) > *:not([data-unstyled]) {
-  display: grid;
-  padding: 1rem;
-  background-color: #E0D4F6;
-  color: #675883;
-  font-size: clamp(1.5rem, 4vw, 2rem);
-  font-weight: bold;
+.grid > div {
+  height: 550px;
   text-align: center;
-  border-radius: 0.15em;
-  border: 1px dashed;
-}
-[class*=smol]:not([data-component]) > *:not([data-unstyled]):not([data-text]) {
-  place-content: center;
-}
-[class*=smol]:not([data-component]) > *:not([data-unstyled])[data-text] {
-  font-size: 1.15rem;
-  text-align: left;
+  margin-top: 3rem;  
+  border-radius: 20px;
+  border: 1px solid #000;
 }
 
-[data-container-style] {
-  outline: 2px dotted #29344B;
+
+.header, 
+.footer {  
+  background: transparent;
+  border-color: #000;
+}
+
+body {
+  border: 1px solid #000;
 }
