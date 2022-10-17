@@ -43,51 +43,13 @@
 <article class="post" role="article">
 <h1>Twibbon Generator</h1>
 <time class="date" datetime="">
-<script src="https://code.jquery.com/jquery-latest.min.js"></script>
-
-<script language='javascript'>
-  var file = null;
-  var user = null;
-
-  function getFileInfo() {
-    var clientContext = SP.ClientContext.get_current();
-    var web = clientContext.get_web();
-    var fileRelativeUrl = '/server/path/to/file.txt';
-
-    this.file = web.getFileByServerRelativeUrl(fileRelativeUrl);
-    clientContext.load(this.file);
-
-    this.user = this.file.get_modifiedBy();
-    clientContext.load(user);
-
-    clientContext.executeQueryAsync(
-      Function.createDelegate(this, this.onQuerySucceeded), 
-      Function.createDelegate(this, this.onQueryFailed)
-    );
-  }
-
-  function onQuerySucceeded(sender, args) {
-    $('#source_data_info').html("Data Last Updated: " + formatDate(this.file.get_timeLastModified()) + "<p> </p>" + "Data Modified By: " + user.get_title());
-  }
-
-  function onQueryFailed(sender, args) {
-    console.log('Function getFileInfo() failed: ' + args.get_message());
-  }
-
-  function formatDate(timestamp) {
-    var month_names = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
-    var pad = "00";
-
-    if(timestamp) {
-      var d = new Date(timestamp);
-      return (pad + d.getDate()).slice(-pad.length) + "-" + month_names[d.getMonth()] + "-" + d.getFullYear();
-    }
-  }
-
-  $(document).ready(function() {
-    ExecuteOrDelayUntilScriptLoaded(getFileInfo, "sp.js");
-  });
-</script>
+<SCRIPT LANGUAGE="JavaScript">
+update = new Date(document.lastModified)
+theMonth = update.getMonth() + 1
+theDate = update.getDate()
+theYear = update.getFullYear()
+document.writeln("<I>Last updated:" + theMonth + "/" + theDate + "/" + theYear + "</I>")
+</SCRIPT>
 </time>
 <p>Ini adalah situs web tempat Anda dapat menambahkan foto ke bingkai.</p>
 <p>Silahkan unggah gambar dan klik pratinjau lalu unduh, aplikasi ini akan otomatis menggabungkan unggahan gambar yang Anda pilih.</p>
