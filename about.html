@@ -31,7 +31,6 @@
 <nav role="navigation">
 <ul>
 <li><a href="/" >Home</a></li>
-<li><a href="/tags" >Tags</a></li>
 <li><a href="/about" >About</a></li>
 <li><a href="/projects" >Projects</a></li>
 <li><a href="/atom.xml">Feed</a></li>
@@ -41,7 +40,7 @@
 
 <main id="main" role="main">
 <article class="post" role="article">
-<h1>Twibbon Generator</h1>
+<h1>Tentang Twibbon</h1>
 <time class="date" datetime="">
 <SCRIPT LANGUAGE="JavaScript">
 update = new Date(document.lastModified)
@@ -51,22 +50,9 @@ theYear = update.getFullYear()
 document.writeln("<I>Terakhir diperbarui: " + theDate + "/" + theMonth + "/" + theYear + "</I>")
 </SCRIPT>
 </time>
-<p>Ini adalah situs web tempat Anda dapat menambahkan foto ke bingkai.</p>
-<p>Silahkan unggah gambar dan klik pratinjau lalu unduh, aplikasi ini akan otomatis menggabungkan unggahan gambar yang Anda pilih.</p>
-<p>
-<label class="uploadBtnWrap" for="thefile">
-<input type="file" id="thefile" onchange="alertFilename()" multiple/>
-<span class="btn">Unggah Gambar...</span>
-<span id="fileName">Tidak ada file yang dipilih</span>
-</label>
-</p>
-
-<p>
-<button class="press press-black press-round press-ghost" onclick="generate()">Pratinjau</button>
-<button class="press press-indigo press-round press-ghost" onclick="download('')" id="download" disabled>Unduh</button>
-</p>
-
-<p><canvas id="canvas"></canvas></p>
+<p>Izin dengan ini diberikan, gratis, kepada siapa pun yang memperoleh salinan perangkat lunak ini dan file dokumentasi terkait (“Perangkat Lunak”), untuk menangani Perangkat Lunak tanpa batasan, termasuk namun tidak terbatas pada hak untuk menggunakan, menyalin, memodifikasi, menggabungkan , menerbitkan, mendistribusikan, mensublisensikan, dan/atau menjual salinan Perangkat Lunak, dan mengizinkan orang-orang yang diberikan Perangkat Lunak untuk melakukannya, dengan tunduk pada ketentuan berikut:</p>
+<p>Pemberitahuan hak cipta di atas dan pemberitahuan izin ini harus disertakan dalam semua salinan atau bagian substansial dari Perangkat Lunak.</p>
+<p>PERANGKAT LUNAK INI DISEDIAKAN “SEBAGAIMANA ADANYA”, TANPA JAMINAN DALAM BENTUK APA PUN, TERSURAT MAUPUN TERSIRAT, TERMASUK NAMUN TIDAK TERBATAS PADA JAMINAN DIPERDAGANGKAN, KESESUAIAN UNTUK TUJUAN TERTENTU DAN TANPA PELANGGARAN. DALAM KEADAAN APA PUN PENULIS ATAU PEMEGANG HAK CIPTA TIDAK BERTANGGUNG JAWAB ATAS KLAIM, KERUSAKAN ATAU TANGGUNG JAWAB LAINNYA, BAIK DALAM TINDAKAN KONTRAK, KERUSAKAN ATAU LAINNYA, TIMBUL DARI, DARI ATAU SEHUBUNGAN DENGAN PERANGKAT LUNAK ATAU DALAM DEALING LAINNYA PERANGKAT LUNAK.</p>
 
 <br><p> taggled <a class="post" href="/tag/css">#css</a>.</p>
 <hr style="height:2px; border:none; margin: 2rem 0; background-color:#e7e9ee;">
@@ -78,15 +64,6 @@ document.writeln("<I>Terakhir diperbarui: " + theDate + "/" + theMonth + "/" + t
 <small>Copyright © 2022 <a target="_blank" rel="noopener" href="https://www.facebook.com/bungferry.wa">Ferry Ayunda.</a></small>
 </footer>
 
-<script src="js/app.js"></script>
-<script>
-        /*if (window.location.protocol === 'http:') {
-            window.location.protocol = 'https:';
-        }*/
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js')
-        }
-</script>
 </body>
 </html>
 
