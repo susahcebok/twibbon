@@ -1,29 +1,14 @@
-.file-upload {
-  display: inline-block;
-  position: relative;
-}
-
-.file-upload__input {
+label {
+  background-color: indigo;
+  color: white;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
   cursor: pointer;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0;
+  margin-top: 1rem;
 }
 
-.file-upload__design {
-  background: #f3c046;
-  border-radius: 20px;
-  display: inline-block;
-  font-family: Work Sans, sans-serif;
-  padding: 10px 20px;
-  text-align: center;
-  transition: background 0.3s ease-in-out;
-}
-
-.file-upload__input:focus + .file-upload__design,
-.file-upload__input:hover + .file-upload__design {
-  background: #e6a70f;
+#file-chosen{
+  margin-left: 0.3rem;
+  font-family: sans-serif;
 }
