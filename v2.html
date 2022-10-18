@@ -90,6 +90,29 @@ input[type=file]::-webkit-file-upload-button {
 <small>Copyright © 2022 <a target="_blank" rel="noopener" href="https://www.facebook.com/bungferry.wa">Ferry Ayunda.</a></small>
 </footer>
 
+<script>
+var forEach = function (array, callback, scope) {
+  for (var i = 0; i < array.length; i++) {
+    callback.call(scope, i, array[i]);
+  }
+};
+
+var file_inputs = document.querySelectorAll('[type=file]');
+forEach(file_inputs, function (index, value) {
+  if (value.dataset.value){
+    value.addEventListener('change', function() {
+      var files = new Array();
+      for (var x = 0; x < this.files.length; x++) {
+        files.push(this.files[x].name);
+      }
+      document.getElementById(this.dataset.value).value = files.join(', ');
+      // this.value.replace(/^C:\\fakepath\\/, '');
+    });
+  }
+});
+
+</script>
+
 <script src="js/script.js"></script>
 <script>
         /*if (window.location.protocol === 'http:') {
