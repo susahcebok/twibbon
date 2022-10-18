@@ -67,6 +67,15 @@
 <small>Copyright © 2022 <a target="_blank" rel="noopener" href="https://www.facebook.com/bungferry.wa">Ferry Ayunda.</a></small>
 </footer>
 
+<script>
+const actualBtn = document.getElementById('actual-btn');
+
+const fileChosen = document.getElementById('file-chosen');
+
+actualBtn.addEventListener('change', function(){
+  fileChosen.textContent = this.files[0].name
+})
+</script>
 <script src="js/script.js"></script>
 <script>
         /*if (window.location.protocol === 'http:') {
