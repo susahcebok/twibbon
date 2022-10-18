@@ -21,6 +21,17 @@
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/main.css">
+    <style>
+    input[type="file"] { 
+    z-index: -1;
+    position: absolute;
+    opacity: 0;
+    }
+
+    input:focus + label {
+    outline: 0px solid;
+    }
+    </style>
     <script src="js/alert.js"></script>
     <script src="https://kit.fontawesome.com/2a19ad17e3.js"></script>
 </head>
