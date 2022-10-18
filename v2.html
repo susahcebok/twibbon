@@ -55,11 +55,11 @@
 <p>Silahkan unggah gambar dan klik pratinjau lalu unduh, aplikasi ini akan otomatis menggabungkan unggahan gambar yang Anda pilih.</p>
 
 <p>
-<div class="file-cont">
-<label for="image_input" class="label-file">Unggah Gambar</label>
-<input type="file" accept="image/*" onchange="loadFile(event)" multiple>
-<!--<input class="input-file" type="file" name="image_input" id="image_input" multiple>-->
-</div>
+<form>
+  <input type="file" accept="image/*" onchange="loadFile(event)" multiple required />
+  <label for="file-upload">Upload file</label>
+  <div id="file-upload-filename"></div>
+</form>
 </p>
 
 <p>
