@@ -42,15 +42,3 @@ h1 {
   justify-content: space-between;
 }
 
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-:root {
-  height: 100%;
-  display: flex;
-}
-
-:root > * {
-  margin: auto;
-}
