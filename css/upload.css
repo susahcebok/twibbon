@@ -1,0 +1,56 @@
+.visuallyhidden, .file [type=file] {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+input {
+  padding: 0.5em 0.75em;
+  border: 1px solid #ccc;
+}
+
+.file {
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 0.5em 0.75em;
+  border-radius: 0.3em;
+  background: #eee;
+}
+.file:hover {
+  background: #fff;
+}
+.file:active {
+  background: #ddd;
+}
+
+.example {
+  margin: 10px;
+}
+
+h1 {
+  font-size: 1.25em;
+}
+
+.inline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:root {
+  height: 100%;
+  display: flex;
+}
+
+:root > * {
+  margin: auto;
+}
