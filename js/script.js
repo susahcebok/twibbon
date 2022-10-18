@@ -63,5 +63,5 @@ var loadFile = function(event) {
 
     var dwn = document.getElementById('btndownload');
         dwn.onclick = function(){
-        download(canvas, 'nge.netlify.app.png');
+        download(canvas, 'twibbon-by-ferry-ayunda.png');
     };
