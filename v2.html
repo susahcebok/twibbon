@@ -42,12 +42,13 @@
 
 <p>Ini adalah situs web tempat Anda dapat menambahkan foto ke bingkai.</p>
 <p>Silahkan unggah gambar dan klik pratinjau lalu unduh, aplikasi ini akan otomatis menggabungkan unggahan gambar yang Anda pilih.</p>
+
 <p>
-<label class="uploadBtnWrap" for="thefile">
+<div class="file-cont">
+<label for="image_input" class="label-file">Unggah Gambar</label>
 <input type="file" accept="image/*" onchange="loadFile(event)" multiple>
-<span class="btn">Unggah Gambar...</span>
-<span id="fileName">Tidak ada file yang dipilih</span>
-</label>
+<!--<input class="input-file" type="file" name="image_input" id="image_input" multiple>-->
+</div>
 </p>
 
 <p>
