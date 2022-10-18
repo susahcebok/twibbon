@@ -15,7 +15,7 @@ var loadFile = function(event) {
   };
 
   function gen() {
-      alert("Click OK to continue...");
+      alert("Klik Ok untuk melanjutkan...");
       // Mensetting Variabel
         var img1 = document.getElementById('avatar');
         console.log(img1);
