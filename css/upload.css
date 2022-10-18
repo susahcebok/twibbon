@@ -1,44 +1,29 @@
-.visuallyhidden, .file [type=file] {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-}
-
-input {
-  padding: 0.5em 0.75em;
-  border: 1px solid #ccc;
-}
-
-.file {
+.file-upload {
   display: inline-block;
-  border: 1px solid #ccc;
-  padding: 0.5em 0.75em;
-  border-radius: 0.3em;
-  background: #eee;
-}
-.file:hover {
-  background: #fff;
-}
-.file:active {
-  background: #ddd;
+  position: relative;
 }
 
-.example {
-  margin: 10px;
+.file-upload__input {
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
 
-h1 {
-  font-size: 1.25em;
+.file-upload__design {
+  background: #f3c046;
+  border-radius: 20px;
+  display: inline-block;
+  font-family: Work Sans, sans-serif;
+  padding: 10px 20px;
+  text-align: center;
+  transition: background 0.3s ease-in-out;
 }
 
-.inline {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.file-upload__input:focus + .file-upload__design,
+.file-upload__input:hover + .file-upload__design {
+  background: #e6a70f;
 }
-
