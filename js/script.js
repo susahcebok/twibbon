@@ -15,10 +15,7 @@ var loadFile = function(event) {
   };
 
   function gen() {
-      new jBox('Notice', {
-      content: 'Twibbon berhasil dibuat!',
-      color: 'blue'
-      });
+      alerty.alert('Twibbon berhasil dibuat!');
 
       // Mensetting Variabel
         var img1 = document.getElementById('avatar');
