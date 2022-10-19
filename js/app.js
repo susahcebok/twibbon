@@ -67,7 +67,7 @@ let generate = () => {
     if(image.files[0] === undefined) 
        new jBox('Notice', {
        content: '<i class="fa fa-warning" style="color:red;"></i> Gambar tidak boleh kosong!',
-       color: 'white'
+       color: 'black'
        });
 
     else{
