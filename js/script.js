@@ -17,7 +17,7 @@ var loadFile = function(event) {
   };
 
   function gen() {
-      alerty.alert('<i class="fa fa-success" style="color:blue;"></i> Twibbon berhasil dibuat!');
+      alerty.alert('<i class="fa fa-info" style="color:blue;"></i> Twibbon berhasil dibuat!');
 
       // Mensetting Variabel
         var img1 = document.getElementById('avatar');
