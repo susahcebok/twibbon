@@ -1,3 +1,5 @@
+// script.js
+
 var loadFile = function(event) {
     var output = document.getElementById('avatar');
     output.src = URL.createObjectURL(event.target.files[0]);
@@ -15,7 +17,7 @@ var loadFile = function(event) {
   };
 
   function gen() {
-      alerty.alert('Twibbon berhasil dibuat!');
+      alerty.alert('<i class="fa fa-success" style="color:blue;"></i> Twibbon berhasil dibuat!');
 
       // Mensetting Variabel
         var img1 = document.getElementById('avatar');
