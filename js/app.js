@@ -65,13 +65,7 @@ let enableBtnDownload = () => {
 let generate = () => {
     
     if(image.files[0] === undefined) 
-       Notipin.Alert({
-    msg: "<i class="fa fa-warning" style="color:red;"></i> Gambar tidak boleh kosong!", // Pesan kamu
-    yes: "OKE", // Tulisan di tombol 'Yes'
-    onYes: () => { /* Kode di sini */ },
-    type: "NORMAL",
-    mode: "LIGHT",
-    })
+       alerty.alert('<i class="fa fa-warning" style="color:red;"></i> Gambar tidak boleh kosong!');
 
     else{
         destroyInterval();                               
