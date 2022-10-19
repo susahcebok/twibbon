@@ -15,7 +15,8 @@ var loadFile = function(event) {
   };
 
   function gen() {
-      alert("Klik Oke untuk melanjutkan...");
+      alerty.alert('<i class="fa fa-info" style="color:blue;"></i> Klik Oke untuk melanjutkan.');
+
       // Mensetting Variabel
         var img1 = document.getElementById('avatar');
         console.log(img1);
