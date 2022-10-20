@@ -83,6 +83,16 @@
             navigator.serviceWorker.register('service-worker.js')
         }
 </script>
+
+<script>
+initComments({
+  node: document.getElementById("comment-section"),
+  defaultHomeserverUrl: "https://matrix.cactus.chat:8448",
+  serverName: "cactus.chat",
+  siteName: "@bungferry",
+  commentSectionId: "section1"
+})
+</script>
 </body>
 </html>
 
