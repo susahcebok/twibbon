@@ -17,7 +17,11 @@ var loadFile = function(event) {
   };
 
   function gen() {
-      alerty.alert('<i class="fa fa-check-square-o" style="color:green;"></i> Twibbon berhasil dibuat!');
+     // alerty.alert('<i class="fa fa-check-square-o" style="color:green;"></i> Twibbon berhasil dibuat!'); //
+      new jBox('Notice', {
+       content: '<i class="fa fa-warning" style="color:white;"></i> Gambar tidak boleh kosong!',
+       color: 'red'
+       });
 
       // Mensetting Variabel
         var img1 = document.getElementById('avatar');
