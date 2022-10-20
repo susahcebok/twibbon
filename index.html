@@ -80,6 +80,12 @@
             navigator.serviceWorker.register('service-worker.js')
         }
 </script>
+
+<script>
+function websiteVisits(response) {
+    document.querySelector("#visits").textContent = response.value;
+}
+</script>
 </body>
 </html>
 
