@@ -19,7 +19,7 @@ var loadFile = function(event) {
   function gen() {
      // alerty.alert('<i class="fa fa-check-square-o" style="color:green;"></i> Twibbon berhasil dibuat!'); //
       new jBox('Notice', {
-       content: '<i class="fa fa-check-circle-o" style="color:green;"></i> Twibbon berhasil dibuat!',
+       content: '<i class="fa fa-check-circle-o" style="color:white;"></i> Twibbon berhasil dibuat!',
        color: 'blue'
        });
 
