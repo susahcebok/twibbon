@@ -73,7 +73,7 @@
 <img id="bingkai" style="display: none" src="images/no-image.png"/>
 <canvas id="canvas"></canvas>
 </p>
-<button class="press press-indigo press-round press-ghost" id="btndownload">Unduh</button>
+<button class="press press-indigo press-round press-ghost" id="btndownload"><span class="tooltip" title="Loading...">Unduh</span></button>
 </div>
 
 <!--<br><p> taggled <a class="post" href="/tag/css">#css</a>.</p>-->
@@ -92,7 +92,7 @@
 new jBox('Tooltip', {
   attach: '.tooltip',
   delayOpen: 500,
-  delayClose: 500
+  delayClose: 1000
 });
 </script>
 <script>
