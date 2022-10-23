@@ -63,7 +63,7 @@
 <p><div id="comment-section"></div></p>
 <!--<span class="post" id="clock"></span>-->
 <hr style="height:2px; border:none; margin: 2rem 0; background-color:#e7e9ee;">
-
+<div style="display: none" id="grabMe">I'm your content. Remember to set CSS display to none!</div>
 </article>
 </main>
 
@@ -85,7 +85,7 @@ new jBox('Tooltip', {
 new jBox('Modal', {
   attach: '#myModal',
   title: 'Hurray!',
-  content: '<canvas id="canvas"></canvas>'
+  content: $('#grabMe')
 });
 </script>
 <script>
