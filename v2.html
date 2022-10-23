@@ -63,15 +63,18 @@
 </p>
 
 <p>
-<button class="press press-black press-round press-ghost" onclick="gen()">Pratinjau</button>
-<button class="press press-indigo press-round press-ghost" id="btndownload">Unduh</button>
+<button id="myModal" class="press press-black press-round press-ghost" onclick="gen()">Pratinjau</button>
+<!--<button class="press press-indigo press-round press-ghost" id="btndownload">Unduh</button>-->
 </p>
 
+<div style="display: none" id="twibbonTK">
 <p>
 <img id="avatar" style="display: none" src="images/no-image.png"/>
 <img id="bingkai" style="display: none" src="images/no-image.png"/>
 <canvas id="canvas"></canvas>
 </p>
+<button class="press press-indigo press-round press-ghost" id="btndownload">Unduh</button>
+</div>
 
 <!--<br><p> taggled <a class="post" href="/tag/css">#css</a>.</p>-->
 <hr style="height:2px; border:none; margin: 2rem 0; background-color:#e7e9ee;">
@@ -89,6 +92,13 @@
 new jBox('Tooltip', {
   attach: '.tooltip',
   trigger: 'click'
+});
+</script>
+<script>
+new jBox('Modal', {
+  attach: '#myModal',
+  title: 'TWIBBON.TK',
+  content: $('#twibbonTK')
 });
 </script>
 <script>
