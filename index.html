@@ -58,7 +58,7 @@
 <button class="press press-indigo press-round press-ghost" onclick="download('')" id="download" disabled>Unduh</button>
 </p>
 
-<p><canvas id="canvas"></canvas></p>
+<div style="display: none" id="grabMe"><p><canvas id="canvas"></canvas></p></div>
 
 <p><div id="comment-section"></div></p>
 <!--<span class="post" id="clock"></span>-->
@@ -81,7 +81,13 @@ new jBox('Tooltip', {
   delayClose: 500
 });
 </script>
-
+<script>
+new jBox('Modal', {
+  attach: '#myModal',
+  title: 'Grab an element',
+  content: $('#grabMe')
+});
+</script>
 <script>
         /*if (window.location.protocol === 'http:') {
             window.location.protocol = 'https:';
