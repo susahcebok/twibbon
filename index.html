@@ -55,7 +55,7 @@
 
 <p>
 <button class="press press-black press-round press-ghost" onclick="generate()">Pratinjau</button>
-<button id="myModal" class="press press-indigo press-round press-ghost" onclick="download('')" id="download" disabled>Unduh</button>
+<button class="press press-indigo press-round press-ghost" onclick="download('')" id="download" disabled>Unduh</button>
 </p>
 
 <!--<p><canvas id="canvas"></canvas></p>-->
@@ -63,7 +63,7 @@
 <p><div id="comment-section"></div></p>
 <!--<span class="post" id="clock"></span>-->
 <hr style="height:2px; border:none; margin: 2rem 0; background-color:#e7e9ee;">
-<div style="display: none" id="grabMe">I'm your content. Remember to set CSS display to none!</div>
+
 </article>
 </main>
 
@@ -81,13 +81,7 @@ new jBox('Tooltip', {
   delayClose: 500
 });
 </script>
-<script>
-new jBox('Modal', {
-  attach: '#myModal',
-  title: 'Hurray!',
-  content: $('#grabMe')
-});
-</script>
+
 <script>
         /*if (window.location.protocol === 'http:') {
             window.location.protocol = 'https:';
