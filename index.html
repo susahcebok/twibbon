@@ -21,12 +21,9 @@
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/main.css">
-    <!--<script src="js/alert.js"></script>
+    <!--<script src="js/alert.js"></script>-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/dialog.js"></script>-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.css" rel="stylesheet">
+    <script src="js/dialog.js"></script>
     <script src="https://kit.fontawesome.com/2a19ad17e3.js"></script>
 </head>
 
@@ -61,8 +58,6 @@
 <button class="press press-indigo press-round press-ghost" onclick="download('')" id="download" disabled>Unduh</button>
 </p>
 
-<div style="display: none" id="resultTW"><canvas id="canvas"></canvas></div>
-
 <p><div id="comment-section"></div></p>
 <!--<span class="post" id="clock"></span>-->
 <hr style="height:2px; border:none; margin: 2rem 0; background-color:#e7e9ee;">
@@ -77,13 +72,6 @@
 <script src="js/clock.js"></script>
 <script src="js/visitor.js"></script>
 <script src="js/app.js"></script>
-<script>
-new jBox('Modal', {
-  attach: '#myModal',
-  title: 'BUNGFERRY.TK',
-  content: $('#resultTW')
-});
-</script>
 
 <script>
         /*if (window.location.protocol === 'http:') {
