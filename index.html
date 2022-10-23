@@ -55,10 +55,13 @@
 
 <p>
 <button id="myModal" class="press press-black press-round press-ghost" onclick="generate()">Pratinjau</button>
-<button class="press press-indigo press-round press-ghost" onclick="download('')" id="download" disabled>Unduh</button>
+<!--<button class="press press-indigo press-round press-ghost" onclick="download('')" id="download" disabled>Unduh</button>-->
 </p>
 
-<div style="display: none" id="grabMe"><p><canvas id="canvas"></canvas></p></div>
+<div style="display: none" id="twibbonTK">
+<p><canvas id="canvas"></canvas></p>
+<button class="press press-indigo press-round press-ghost" onclick="download('')" id="download" disabled>Unduh</button>
+</div>
 
 <p><div id="comment-section"></div></p>
 <!--<span class="post" id="clock"></span>-->
@@ -84,8 +87,8 @@ new jBox('Tooltip', {
 <script>
 new jBox('Modal', {
   attach: '#myModal',
-  title: 'Grab an element',
-  content: $('#grabMe')
+  title: 'TWIBBON.TK',
+  content: $('#twibbonTK')
 });
 </script>
 <script>
